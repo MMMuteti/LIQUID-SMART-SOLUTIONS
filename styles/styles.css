@@ -1,55 +1,77 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('../assets/background-image.jpg') no-repeat center center fixed;
-    background-size: cover;
-    color: #fff;
-}
+  body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('Nairobi.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
 
-.container {
-    text-align: center;
-    padding: 100px 20px;
-}
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
 
-h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-}
+        .title {
+            font-size: 2em;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
 
-h2 {
-    font-size: 1.5rem;
-    margin-bottom: 30px;
-}
+        .subtitle {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
 
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
+        .categories {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
 
-.service {
-    background: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 10px;
-    width: 150px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
+        .category {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            border-radius: 10px;
+            transition: background 0.3s;
+            cursor: pointer;
+        }
 
-.service img {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 10px;
-}
+        .category:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
 
-.social-icons {
-    margin-top: 40px;
-}
+        .category img {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
 
-.social-icons img {
-    width: 30px;
-    margin: 0 10px;
-    cursor: pointer;
-}
+        .category span {
+            font-size: 1em;
+        }
+
+        .footer {
+            margin-top: 20px;
+        }
+
+        .footer a {
+            margin: 0 10px;
+            color: white;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer a:hover {
+            color: #1e90ff;
+        }
